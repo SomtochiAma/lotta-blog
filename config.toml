@@ -1,0 +1,72 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Hi, I'm Lotachi"
+theme = "hello-friend"
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+  series   = "series"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  # Metadata mostly used in document's head
+  description = "Nice theme for homepages and blogs"
+  keywords = ""
+  handle = "lottabydesign"
+  images = [""]
+
+  [params.homeSubtitle]
+    partone = "A designer and product leader - passionate about"
+    parttwo = "technology, art and how they shape our human experience"
+
+  # Toggle this option need to rebuild SCSS, requires extended version of Hugo
+  justifyContent = false  # Set "text-align: justify" to .post-content.
+
+  # Default theme "light" or "dark"
+  defaultTheme = "light"
+  themeColor = "#252627"
+
+  # Colors for favicons
+  [params.favicon.color]
+    mask = "#252627"
+    msapplication = "#252627"
+    theme = "#252627"
+
+  # Social icons
+  [[params.social]]
+    name = "behance"
+    url  = "https://behance.com/lottabydesign"
+
+  [[params.social]]
+    name = "dribbble"
+    url  = "https://www.dribbble.com/lottabydesign"
+
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/lottabydesign"
+
+  [[params.social]]
+    name = "email"
+    url  = "mailto:somtochionyekwere@gmail.com"
+
+[languages]
+  [languages.en]
+    subtitle  = "Hi, I'm LOtachi Aniidi"
+    weight    = 1
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/"
+
+  [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "posts/"
